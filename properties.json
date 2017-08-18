@@ -1,0 +1,6 @@
+{
+  "static.server": "//static.dev.zhixike.net",
+  "zhixike.api.server": "//127.0.0.1:8000/system-web",
+  "zhixike.platform.service": "//www.dev.zhixike.net",
+  "zhixike.org.server": "https://orgmgr.dev.zhixike.net"
+}

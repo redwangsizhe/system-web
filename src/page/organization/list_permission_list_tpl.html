@@ -1,0 +1,20 @@
+<div class="permission-list">
+    <form>
+        <div class="select-all">
+            <input type="checkbox" class="check-box" />
+            <label class="select">全选</label>
+        </div>
+        <hr>
+        <ul class="plalst">
+            {{~it.data:item}}
+            <li>
+                <input class="listitem" type="checkbox" value="{{=item['priId']}}" name="{{=item['priName']}}" status="{{=item['status']}}"/>
+                <label class="sub-menu">{{=item['priName']}}</label>
+            </li>
+            {{~}}
+        </ul>
+    </form>
+    <div class="saveBtn">
+        <button class="btn btn-primary btn-submit">保存</button>
+    </div>
+</div>

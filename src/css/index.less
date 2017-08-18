@@ -1,0 +1,70 @@
+#container {
+	padding:10px;
+}
+
+.overflow-hidden{
+	overflow:hidden;
+}
+
+/*个性配置*/
+.characterConfigure {
+	padding: 10px 0;
+	& .field .field-label {
+		width: 20%;
+	}
+	& .form-actions {
+		padding-left: 20%;
+	}
+	& .field .field-input-box .image-info .thumbnail {
+		height:auto;
+	}
+}
+
+/*预览皮肤*/
+.skin-preview {
+	position: absolute;
+	z-index: 100;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	& .close-preview {
+		position: absolute;
+		right:18px;
+		top:15px;
+		& i {
+			font-size: 25px;
+			color: #fff;
+			cursor: pointer;
+			&:hover {
+				color: #f00;
+			}
+		}
+	}
+	& .preview-name {
+		padding: 80px 0 40px;
+		text-align: center;
+		& img {
+			width: auto;
+			height: 50px;
+			position: relative;
+			top:18px;
+		}
+		& span {
+			color: #02477f;
+			font-size: 24px;
+			padding-left: 15px;
+		}
+	}
+	& .preview-login {
+		width: 300px;
+		height: 239px;
+		margin: auto;
+		background: url("../image/preview-login.png") no-repeat;
+	}
+}
+
+@import "organization-list";
+@import "list_permission_list_tpl";
+@import"./app-limit.less";
+@import "./limit-list.less";

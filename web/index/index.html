@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <base href="${rc.contextPath}/"/>
+    <title>运营平台 - 智习客</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="'$static.server'/lib/bootstrap-3.3.7/css/bootstrap.css" rel="stylesheet">
+    <link href="'$static.server'/lib/font-awesome-4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <link href="'$static.server'/lib/g/1.1.2/portal/index.min.css" rel="stylesheet">
+</head>
+
+<body>
+<!--左侧导航开始-->
+<div class="sidebar">
+    <div class="sidebar-header">
+        <p class="t">智习客 - 运营平台</p>
+        <p class="t-min">Z</p>
+        <a class="btn-mini-nav" href="javascript:void(0);">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <!--菜单栏-->
+    <ul class="sidebar-nav"></ul>
+</div>
+<!--左侧导航结束-->
+<!--右侧部分开始-->
+<div class="page-wrapper">
+    <!--页面顶部-->
+    <div class="page-wrapper-header">
+        <div style="float:right">
+            <div style="float:left;margin-right:40px;">
+                <!--功能按钮-->
+                <a class="menu-item" title="邮件列表" href="email.html">
+                    <i class="fa fa-envelope-o"></i>
+                    <span class="label label-success">7</span>
+                </a>
+                <a class="menu-item" title="通知列表" href="notice.html">
+                    <i class="fa fa fa-bell-o"></i>
+                    <span class="label label-warning">9</span>
+                </a>
+                <a class="menu-item" title="紧急事务" href="flag.html">
+                    <i class="fa fa fa fa-flag-o"></i>
+                    <span class="label label-danger">8</span>
+                </a>
+            </div>
+            <!--个人信息-->
+            <div class="profile">
+                <span class="avatar">
+                    <img class="img-circle" src="'$static.server'/images/icon_zhixike_small.png"/>
+                </span>
+                <a class="avatar-title menu-item" title="个人信息" href="profile.html">格雷007</a>
+                <a class="logout" href="logout.html"><i class="fa fa fa-sign-out"></i> 退出</a>
+            </div>
+        </div>
+    </div>
+    <div class="win-container" style="height:calc(100% - 36px);"></div>
+    <div class="page-wrapper-footer">2017 &copy; gwchina.cn</div>
+</div>
+<!--右侧部分结束-->
+<!--IE8及以下版本-->
+<!--[if lte IE 8]>
+<script src="'$static.server'/lib/browser-not-supported/browser.js"></script>
+<![endif]-->
+<script src="'$static.server'/lib/jquery/jquery-1.12.0.min.js"></script>
+<script src="'$static.server'/lib/bootstrap-3.3.7/js/bootstrap.js"></script>
+<script src="'$static.server'/lib/g/1.1.2/portal/index.min.js"></script>
+<script>
+    var menu = [
+        {
+            title: '开发说明',
+            url: '/index/readme.html'
+        },
+        {
+            title: '机构管理',
+            url: '/organization/list.html'
+        }
+    ];
+    app.initMenu(menu);
+</script>
+</body>
+</html>

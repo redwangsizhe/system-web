@@ -1,0 +1,12 @@
+<div class="org-list-item" data-areaCode="{{=it.areaCode}}" data-orgpid="{{=it.id}}">
+    {{? it.orgType=="MANAGE"}}
+    <div class="org-item-name">{{=it.orgName}}</div>
+    {{? it.status=="N"}}
+    <div class="org-item-type">已开通</div>
+    {{?? it.status=="F"}}
+    <div class="org-item-type">未开通</div>
+    {{?}}
+    {{?? it.orgType=="SCHOOL"}}
+    <div class="org-item-name">{{=it.orgName}}</div>
+    {{?}}
+</div>
